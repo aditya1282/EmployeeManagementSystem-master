@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="input-group">
+    <label for="firstname">First Name:</label>
+    <input type="text" id="firstname" class="form-control" placeholder="Enter first name" [(ngModel)]="employee.firstname" (input)="validateFirstName()" [class.field-error]="fieldErrors['firstname']">
+    <span class="error-message" *ngIf="fieldErrors['firstname']">This field is required!</span>
+  </div>
+  <div class="input-group">
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" class="form-control" placeholder="Enter last name" [(ngModel)]="employee.lastname" (input)="validateLastName()" [class.field-error]="fieldErrors['lastname']">
+    <span class="error-message" *ngIf="fieldErrors['lastname']">This field is required!</span>
+  </div>
+  <div class="input-group">
+    <label for="mobile">Mobile:</label>
+    <input type="text" id="mobile" class="form-control" placeholder="Enter mobile number" [(ngModel)]="employee.mobile" (input)="validateMobile()" [class.field-error]="fieldErrors['mobile']">
+    <span class="error-message" *ngIf="fieldErrors['mobile']">This field is required!</span>
+    <span class="error-message" *ngIf="isEmployeeAlreadyExists && !fieldErrors['mobile']">{{ responseMessage }}</span>
+  </div>
+  <div class="input-group">
+    <label for="email">E-mail:</label>
+    <input type="text" id="email" class="form-control" placeholder="Enter your email" [(ngModel)]="employee.email" (input)="validateEmail()" [class.field-error]="fieldErrors['email']">
+    <span class="error-message" *ngIf="fieldErrors['email']">Invalid email format!</span>
+  </div>
+  <div class="button-container">
+    <button class="btn btn-primary" [disabled]="!isFormValid" (click)="checkForDuplicateEmployee()">Save</button>
+    <span class="ResponseMessageAfterSaving" *ngIf="isEmployeeRegistered">{{ responseMessageaftersaving }}</span>
+  </div>
+</div>
+
+

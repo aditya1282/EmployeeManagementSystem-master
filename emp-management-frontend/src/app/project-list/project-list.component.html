@@ -1,0 +1,17 @@
+<h3 class = 'heading'>Project List</h3>
+<button class="nav-btn" (click)="goToProjectForm()">Add new Project</button>
+<table class="project_tbl">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects">
+        <td>{{ project.id }}</td>
+        <td>{{ project.name }}</td>
+      </tr>
+    </tbody>
+  </table>
+  

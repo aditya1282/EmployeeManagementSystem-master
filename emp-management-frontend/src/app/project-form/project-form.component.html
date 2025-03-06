@@ -1,0 +1,13 @@
+<div class="projectform">
+  <div class="input-group">
+    <label for="projectname">Project Name:</label>
+    <input type="text" id="projectname" class="form-control" placeholder="Enter project name" [(ngModel)]="project.name"
+    (input)="validateProjectName(); checkForDuplicateProjectName()" [class.field-error]="fieldErrors['name'] || isProjectNameDuplicate"/>
+    <span class="error-message" *ngIf="fieldErrors['name']">This field is required!</span>
+    <span class="error-message" *ngIf="isProjectNameDuplicate">{{ responseMessageaftersaving }}</span>
+  </div>
+  <div class="button-container">
+    <button class="btn btn-primary" [disabled]="!isFormValid" (click)="saveProject()">Save</button>
+    <span class="ResponseMessageAfterSaving" *ngIf="isProjectRegistered">{{ responseMessageaftersaving }}</span>
+  </div>
+</div>

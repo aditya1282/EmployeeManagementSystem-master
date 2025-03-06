@@ -1,0 +1,74 @@
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input,
+  .select {
+    color: black;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  table {
+    border-collapse: collapse; 
+  }
+  
+  td, th {
+    padding: 5px; 
+    border: 1px solid black; 
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .select:active{
+    color: black;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    background-color: #4463AB;
+    padding: 3px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-family: sans-serif;
+  }
+  
+  .select {
+    height: 20px;
+    width: 100px;
+    background-color: white;
+    color: black;
+    align-items: center;
+  }
+  
+  .emp_tbl{
+    width: 100%;
+  }
+  
+  th {
+    text-align: left;
+  }
+  

@@ -1,0 +1,35 @@
+<h3 class="heading">Employee List</h3>
+<button class="nav-btn" (click)="goToEmployeePage()">Add new Employee</button>
+<table class="emp_tbl">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees | paginate: {
+     itemsPerPage: pageSize,
+     currentPage: currentPage,
+     id: 'server' }; let i=index">
+      <td>{{ employee.id }}</td>
+      <td>{{ employee.firstname }}</td>
+      <td>{{ employee.lastname }}</td>
+      <td>{{ employee.mobile }}</td>
+      <td>{{ employee.email }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="pagination">
+  <pagination-controls
+    (pageChange)="onPageChange($event)"
+    [id]="'server'"
+    [autoHide]="false"
+    [maxSize]="5"
+    [directionLinks]="true"
+  ></pagination-controls>
+</div>

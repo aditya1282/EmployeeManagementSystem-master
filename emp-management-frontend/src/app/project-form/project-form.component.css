@@ -1,0 +1,113 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input,
+.select {
+  color: black;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+.select:active{
+  color: black;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover:not([disabled]) {
+  background-color: #0056b3;
+}
+
+.button-container button:active:not([disabled]) {
+  background-color: #004999;
+}
+
+.button-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button-container button:disabled:hover {
+  background-color: #ccc;
+}
+
+.error-message {
+  color: red;
+}
+
+.response-message {
+  color: red;
+}
+
+.ResponseMessageAfterSaving {
+  color: black;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  background-color: #4463AB;
+  padding: 5px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.select {
+  height: 20px;
+  width: 100px;
+  background-color: white;
+  color: black;
+  align-items: center;
+}
+.projectform{
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+#projectname{
+  width: 100% !important;
+}
+

@@ -1,0 +1,41 @@
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button.btn-grey {
+  background-color: #ccc;
+  color: #888;
+}
+
+.button-container button.btn-blue {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.button-container button.btn-grey:hover {
+  background-color: #bbb;
+}
+
+.button-container button.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+.button-container button.btn-grey:disabled {
+  cursor: not-allowed;
+}
+
+.button-container button.btn-blue:disabled {
+  cursor: not-allowed;
+}
+
+.button-container button.btn-grey:active {
+  background-color: #999;
+}
+
+.button-container button.btn-blue:active {
+  background-color: #004999;
+}
