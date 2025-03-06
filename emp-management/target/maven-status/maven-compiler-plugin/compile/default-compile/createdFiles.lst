@@ -1,0 +1,10 @@
+io\entity\Employee.class
+io\repository\EmployeeRepository.class
+io\controller\ProjectController.class
+io\repository\ProjectRepository.class
+io\controller\EmployeeController.class
+io\EmployeeManagementApllication.class
+io\service\ProjectService.class
+io\service\EmployeeService.class
+io\ProjectManagementApplication.class
+io\entity\Project.class
