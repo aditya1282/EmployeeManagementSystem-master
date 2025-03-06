@@ -32,7 +32,7 @@ This is a full-stack application that allows you to manage employee details and 
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/EmployeeManagementSystem.git
+   git clone https://github.com/aditya1282/EmployeeManagementSystem.git
    ```
 2. Navigate to the backend directory:
    ```bash
